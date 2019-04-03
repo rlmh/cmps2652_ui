@@ -8,6 +8,9 @@ $(document).ready(function() {
             $('#loginForm').serialize(), //data to be sent
             (response) => { // response from the server
                 console.log(response)
+                if (response.ok) {
+                    window.location.replace('http://localhost:8000/dashboard.html')
+                }
             }
         )
     })
