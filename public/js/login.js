@@ -7,8 +7,8 @@ $(document).ready(function() {
         $.post('http://localhost:9090/login',
             $('#loginForm').serialize(), //data to be sent
             (response) => { // response from the server
-                console.log(response)
                 if (response.ok) {
+                    localStorage.setItem('token', response.token)
                     window.location.replace('http://localhost:8000/dashboard.html')
                 }
             }
