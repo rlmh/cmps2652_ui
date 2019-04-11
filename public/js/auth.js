@@ -14,8 +14,9 @@ const isUserAuthenticated = () => {
                 }
             }
         }).done(function(response) {
-            if(!response.ok)
+            if(!response.ok) {
                 window.location.href = 'http://localhost/8000' 
+            }
         })
 }
 

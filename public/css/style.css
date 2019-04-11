@@ -1,0 +1,18 @@
+#header {
+    margin-top: 5px;
+    padding: 10px 5px;
+    border: 1px black solid;
+}
+#body {
+    height: 85vh;
+}
+
+#body > menu {
+    border: 1px blue solid;
+    padding: 2px;
+    margin: 5px 0px;
+}
+
+#footer {
+    border: 1px red solid;
+}
